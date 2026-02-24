@@ -6,7 +6,7 @@ module.exports = {
   platform: 'github',
   forkProcessing: 'enabled',
   dryRun: null, // Beachte: Bei 'full' werden keine PRs erstellt, nur Logs geschrieben!
-  repositories: ['dvu536/prod-container-builds-with-actions'],
+  repositories: ['dvu536/renovatetutorial'],
   extends: [
     'config:base'
   ],
