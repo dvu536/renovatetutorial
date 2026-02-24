@@ -16,18 +16,24 @@ module.exports = {
   enabledManagers: null, 
 
   packageRules: [
-    {
-      description: 'lockFileMaintenance',
+   {
+      description: 'Standard Updates ohne Approval (Patch, Digest, etc.)',
       matchUpdateTypes: [
         'pin',
         'digest',
-        'patch',
-        'minor',
-        'major',
+        'patch', // Nur Bugfixes gehen direkt durch
         'lockFileMaintenance',
       ],
       dependencyDashboardApproval: false,
       minimumReleaseAge: null,
+    },
+    {
+      description: 'Updates, die ein manuelles Häkchen im Dashboard brauchen',
+      matchUpdateTypes: [
+        'minor',
+        'major', 
+      ],
+      dependencyDashboardApproval: true 
     },
   ],
 };
