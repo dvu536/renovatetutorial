@@ -8,7 +8,7 @@ module.exports = {
   dryRun: null, // Beachte: Bei 'full' werden keine PRs erstellt, nur Logs geschrieben!
   repositories: ['dvu536/renovatetutorial'],
   extends: [
-    'config:base'
+    'config:recommended'
   ],
 
   // 2. Optional: Explizit alle Manager erlauben (falls du einschränken wolltest)
