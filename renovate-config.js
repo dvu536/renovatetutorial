@@ -3,6 +3,7 @@ module.exports = {
   username: 'renovate-release',
   gitAuthor: 'Renovate Bot <bot@renovateapp.com>',
   onboarding: false,
+  requireConfig: "ignored",
   platform: 'github',
   forkProcessing: 'enabled',
   dryRun: null, // Beachte: Bei 'full' werden keine PRs erstellt, nur Logs geschrieben!
